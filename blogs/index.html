@@ -12,7 +12,7 @@ title: Blogs
   </ol>
 
   <!-- Pagination links -->
-  {% if paginator.total_pages > 1 %}
+  {% if paginator.total_pages > 2 %}
     <ul class="pagination pagination-sm">
       {% if paginator.previous_page %}
         <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | prepend: site.url | replace: '//', '/' }}">&laquo;</a></li>
@@ -22,10 +22,10 @@ title: Blogs
 
       <li><a href="{{ site.url }}/">First</a></li>
 
-      {% for page in (1..paginator.total_pages) %}
+      {% for page in (2..paginator.total_pages) %}
         {% if page == paginator.page %}
           <li class="active"><a>{{ page }}<span class="sr-only">(current)</span></a></li>
-        {% elsif page == 1 %}
+        {% elsif page == 2 %}
           <li><a href="{{ site.url }}/">{{ page }}</a></li>
         {% else %}
           <li><a href="{{ site.paginate_path | prepend: site.baseurl | prepend: site.url | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
