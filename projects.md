@@ -1,7 +1,7 @@
 ---
-layout: project
-title: Projects
+layout: clases
+title: Clases
 permalink: /projects/
 ---
 
-Few of my projects. Currently doing more in backend, focused in Python and Django.
+Estas son las unidades 1 y 2 vistas en la asignatura de Introducción a la Ingeniería de Software.
